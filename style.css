@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Castoro+Titling & family= Orbitron:wght@400;500;600;700 & family= Areia movediça: wght@300;400;500;600;700 & display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Castoro+Titling&family=Orbitron:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: blur;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+.logo{
+    color: black;
+    font-family: 'Orbitron', sem serifa;
+    align-items: flex-start;
+}
+.navegacao a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 500;
+    margin: 4px;
+}
+.navegacao .btnLogin-nave{
+    margin-left: 10px;
+    padding: 5px 20px;
+    background-color: transparent;
+    color: black;
+    border: 3px, solid, rgba(0, 0, 0, 0.329);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.navegacao .btnLogin-nave:hover{
+    background-color: #e28977a4;
+    color: white;
+    border: 3px, solid;
+}
+.navegacao a:hover{
+    background-color: #e2897783;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 10px;
+    transition: 0.2s;
+}
+.naosei{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(168, 165, 165, 0.363);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.naosei .form-boxlogin{
+    width: 100%;
+    padding: 50px;
+}
+.form-boxlogin h2{
+    width: 100%;
+    height: 59px;
+    text-align: center;
+    font-family: 'Orbitron', sem serifa;
+    font-family: 'Bebas Neue', sem serifa;
+    font-size: 2.5em ;
+    font-weight: 500;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.479);
+    margin: 25px 0px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.534);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -3px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+
+}
+.naosei .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 10px 0px;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remember-forgot {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot a{
+    text-decoration: none;
+    color: rgb(73, 39, 128);
+}
+.remember-forgot label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+.btn{
+    width: 99%;
+    margin-top: 15px;
+    padding: 6px 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.808);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
